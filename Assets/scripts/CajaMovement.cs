@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CajaMovement : MonoBehaviour
 {
-    public float velocidadCaja = 3f;
+    public float velocidadCaja = 5f;
     float initialYValue;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class CajaMovement : MonoBehaviour
 
     public void MoveBoxToRandomPosition(){
          Vector3 newPosition = transform.position;
-         
+
         int randomX = 0;
         randomX = Random.Range(0,3);
         if(randomX == 0){
