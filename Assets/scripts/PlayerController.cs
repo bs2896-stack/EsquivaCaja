@@ -18,8 +18,10 @@ public class PlayerController : MonoBehaviour
         } else  if (Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.A)) {
             transform.Translate(-2,0,0);
         }
-
         
+        
+
+
     }
     
 }
