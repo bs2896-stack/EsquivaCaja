@@ -10,14 +10,14 @@ public class PlayerCollisionDetection : MonoBehaviour
         
     }
 
-    void OncollisionEnter (Collision col)
+    void OnCollisionEnter (Collision col)
 
     {
         if (col.gameObject.CompareTag("Caja"))
         {
-           
+            Destroy(gameObject);
         }
-         Destroy(gameObject);
+        
 
 
 
