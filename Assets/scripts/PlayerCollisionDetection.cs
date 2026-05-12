@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerCollisionDetection : MonoBehaviour
 {
+    private ContadorTiempo contadorTiempo;
     // Start is called before the first frame update
     void Start()
     {
-        
+         contadorTiempo = FindObjectOfType<ContadorTiempo>();
     }
 
     void OnCollisionEnter (Collision col)
@@ -18,6 +19,10 @@ public class PlayerCollisionDetection : MonoBehaviour
             Destroy(gameObject);
         }
         
+        if (col.gameObject.CompareTag("Caja"))
+        {
+            contadorTiempo.PausarTimer();
+        }
 
 
 

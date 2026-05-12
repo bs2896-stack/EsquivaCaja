@@ -18,6 +18,10 @@ public class CajaMovement : MonoBehaviour
         transform.Translate(0,-velocidadCaja * Time.deltaTime,0);
     }
 
+    public void IncrementarVelocidad (float incremento = 0.5f) {
+        velocidadCaja += incremento;
+    }
+
     public void MoveBoxToRandomPosition(){
          Vector3 newPosition = transform.position;
 
